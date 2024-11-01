@@ -65,7 +65,7 @@
         // Клик по кнопке для получения токенов
         document.getElementById('clickButton').addEventListener('click', () => {
             if (energy > 0) {
-                tokens += 0.002 * clickLevel;
+                tokens += 2.002 * clickLevel;
                 energy--;
                 updateDisplay();
                 Telegram.WebApp.MainButton.setText(Токены: ${tokens.toFixed(3)});
